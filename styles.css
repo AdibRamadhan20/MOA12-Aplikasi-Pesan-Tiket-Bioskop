@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(135deg, #CC2936 50%, #08415C 50%);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    margin-top: 2rem;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000000; /* Warna krem lembut */
+    color: #343a40; /* Warna teks tetap gelap untuk kontras */
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff; /* Teks putih */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #333a40; /* Warna gelap untuk card */
+    color: #ffffff; /* Teks di dalam card tetap putih */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body h5 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #ffffff; /* Teks putih di bagian judul card */
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #ffffff; /* Teks deskripsi card putih */
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #ffcc00;
+}
+
+.modal-header {
+    background-color: #08415C; /* Sesuaikan modal header dengan warna tema */
+    color: rgb(255, 255, 255);
+}
+
+.modal-body {
+    padding: 2rem;
+    background-color: #000000; /* Warna krem lembut untuk modal body */
+}
+
+.btn-primary {
+    background-color: #CC2936; /* Sesuaikan tombol dengan warna merah tema */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #a6212c; /* Warna hover yang lebih gelap */
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .modal-body {
+        padding: 1rem;
+    }
+}
